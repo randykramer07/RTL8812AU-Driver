@@ -1,6 +1,6 @@
 #!/bin/sh
 #==================================================================================================
-#title           :T4U-install.sh
+#title           :RK-RTL8812AU.sh
 #description     :Install RTL8812AU Drivers
 #author          :Randy Kramer
 #date            :06/02/2023
@@ -51,3 +51,5 @@ make dkms_install >/dev/null 2>&1
 printf "%s\n" "The driver has been installed successfully and the repository has been removed"
 cd ..
 rm -rf rtl*
+
+modprobe rtl8812au
